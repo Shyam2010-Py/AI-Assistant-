@@ -42,7 +42,7 @@ button:disabled{opacity:.5;cursor:not-allowed}
 .profile-avatar{display:grid;place-items:center;width:30px;height:30px;border:1px solid rgba(166,151,255,.32);border-radius:10px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:700}
 .profile-name{font-size:12px;font-weight:600;color:var(--text)}
 .profile-label{margin-left:auto;color:var(--subtle);font-size:8px;letter-spacing:.1em}
-/* The fixed sidebar leaves auto-placement on column 1; place the workspace in the visible second track. */
+
 .main-area{grid-column:2;position:relative;display:flex;flex-direction:column;min-width:0;min-height:0;height:100dvh;overflow:hidden;background:radial-gradient(ellipse at 50% -16%,rgba(128,106,218,.1),transparent 42%),var(--bg)}
 .topbar{position:fixed;top:0;left:268px;right:0;z-index:40;display:flex;align-items:center;gap:12px;height:66px;min-height:66px;padding:0 27px;border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(20px)}
 .menu-button{margin-left:-9px}
@@ -205,33 +205,33 @@ body.sidebar-collapsed .profile-row{justify-content:center;padding-right:0;paddi
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}\
 
 #jarvis-core-container {
-    width: 200px;       /* Size of the orb */
-    height: 200px;      /* Size of the orb */
-    margin: 20px auto;  /* Center it horizontally */
+    width: 200px;       
+    height: 200px;      
+    margin: 20px auto;  
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Optional: Add a glow effect to the canvas inside */
+
 #jarvis-core-container canvas {
-    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6)); /* Cyan Glow */
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.6)); 
     border-radius: 50%;
 }
 
-/* --- WAKE BUTTON STYLES --- */
+
 .wake-button {
   position: relative;
 }
 
-/* When Wake Mode is ON, make the icon Green/Glowing */
+
 .wake-button.active svg {
-  stroke: #00ff00; /* Bright Green */
+  stroke: #00ff00; 
   filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.5));
 }
 
-/* Optional: Pulse animation when listening */
+
 @keyframes pulse-wake {
   0% { opacity: 1; }
   50% { opacity: 0.5; }
